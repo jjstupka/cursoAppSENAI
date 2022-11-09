@@ -16,13 +16,14 @@
 <div class="principal">
 <h3>Selecione a estação: </h3>
 <form id="L" method="post">
-   <select name="estacao">
+   <select name="estacao" onchange="this.form.submit()">
+    <option>Estações</option>
     <option value="Primavera é a estação que começa em Setembro e termina em Dezembro.">Primavera</option>
     <option value="Verao é a estação que começa em dezembro e termina em Março.">Verão</option>
     <option value="Outono é a estação que começa em Março e termina em Junho.">Outuno</option>
     <option value="Inverno é a estação que começa em Junho e termina em Setembro.">Inverno</option>
-  </select>
-<input type="submit" name="Submit" value="Enviar"><br><br>
+  </select><br><br>
+
 </form>
 
 <?php
