@@ -17,8 +17,6 @@
 <h3>Selecione a estação: </h3>
 <form id="L" method="post">
    <select name="estacao">
-   
-    <option value=""></option>
     <option value="Primavera é a estação que começa em Setembro e termina em Dezembro.">Primavera</option>
     <option value="Verao é a estação que começa em dezembro e termina em Março.">Verão</option>
     <option value="Outono é a estação que começa em Março e termina em Junho.">Outuno</option>
@@ -28,7 +26,7 @@
 </form>
 
 <?php
-$_POST['estacao'] = ( isset($_POST['estacao']) ) ? $_POST['estacao'] : null;
+$_POST['estacao'] = ( isset($_POST['estacao']) ) ? $_POST['estacao'] : "Escolha uma estação para ver sua descrição.";
 echo $_POST['estacao'];
 
 ?>
